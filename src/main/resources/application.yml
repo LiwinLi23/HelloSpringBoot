@@ -1,0 +1,15 @@
+server:
+  port: 2311
+
+#person:
+#  lastName: Liwin Lee
+#  age: 18
+#  isBoss: false
+#  birth: 1981/09/13
+#  map: {k1: v1, k2: v2}
+#  list:
+#    - lisi
+#    - wangwu
+#  dog:
+#    lastName: Beibei Lee
+#    age: 2
