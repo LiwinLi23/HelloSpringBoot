@@ -1,6 +1,8 @@
 package com.example.liwinli.HelloSpringBoot.com.example.liwinli.bean;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -8,9 +10,12 @@ import java.util.List;
 import java.util.Map;
 
 @Component
+@PropertySource(value = "classpath:person.properties")
 @ConfigurationProperties(prefix = "person")
 public class Person {
+//    @Value("${person.lastName}")
     private String lastName;
+//    @Value("#{10 * 3}")
     private Integer age;
     private boolean isBoss;
     private Date birth;
@@ -82,7 +87,7 @@ public class Person {
                 ", age=" + age +
                 ", isBoss=" + isBoss +
                 ", birth=" + birth +
-                ", maps=" + map +
+                ", map=" + map +
                 ", list=" + list +
                 ", dog=" + dog +
                 '}';
