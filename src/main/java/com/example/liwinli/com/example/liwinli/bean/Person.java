@@ -1,4 +1,4 @@
-package com.example.liwinli.HelloSpringBoot.com.example.liwinli.bean;
+package com.example.liwinli.com.example.liwinli.bean;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;

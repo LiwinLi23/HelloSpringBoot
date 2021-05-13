@@ -1,4 +1,4 @@
-package com.example.liwinli.HelloSpringBoot;
+package com.example.liwinli;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

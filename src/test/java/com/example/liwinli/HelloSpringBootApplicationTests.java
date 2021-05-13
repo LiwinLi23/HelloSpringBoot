@@ -1,6 +1,6 @@
-package com.example.liwinli.HelloSpringBoot;
+package com.example.liwinli;
 
-import com.example.liwinli.HelloSpringBoot.com.example.liwinli.bean.Person;
+import com.example.liwinli.com.example.liwinli.bean.Person;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
