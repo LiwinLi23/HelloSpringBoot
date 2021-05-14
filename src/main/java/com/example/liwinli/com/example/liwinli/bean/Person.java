@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
-@PropertySource(value = "classpath:person.properties")
+//@PropertySource(value = "classpath:person.properties")
 @ConfigurationProperties(prefix = "person")
 public class Person {
 //    @Value("${person.lastName}")
