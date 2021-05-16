@@ -9,10 +9,13 @@ spring:
 #    active: test
 
 person:   #这是一个对象
-#  lastName: Liwin Lee
-#  age: 18
-#  isBoss: false
-#  birth: 1981/09/13
+  lastName: Liwin Lee
+  age: 28
+  isBoss: true
+  birth: 1981/09/13
+  map: {k1: v1, k2: 12}
+  list: [zhangsan, lisi, wangwu]
+  dog: {lastName: Beibei, age: 2}
 mySelf: {lastName: Liwin Lee, age: 18}    #对象单行写法， 跟Map一样
 #  map: {k1: v1, k2: v2}
 #  list:

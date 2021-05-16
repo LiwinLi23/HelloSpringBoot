@@ -1,8 +1,6 @@
 package com.example.liwinli.com.example.liwinli.bean;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
@@ -11,13 +9,13 @@ import java.util.Map;
 
 @Component
 //@PropertySource(value = "classpath:person.properties")
-@ConfigurationProperties(prefix = "person")
+@ConfigurationProperties(prefix = "person")         // 将配置文件中相关的元素进行绑定
 public class Person {
 //    @Value("${person.lastName}")
     private String lastName;
 //    @Value("#{10 * 3}")
     private Integer age;
-    private boolean isBoss;
+    private Boolean isBoss;
     private Date birth;
 
     private Map<String, Object> map;
@@ -40,12 +38,12 @@ public class Person {
         this.age = age;
     }
 
-    public Boolean getBoss() {
+    public Boolean getIsBoss() {
         return isBoss;
     }
 
-    public void setBoss(Boolean boss) {
-        isBoss = boss;
+    public void setIsBoss(Boolean isBoss) {
+        this.isBoss = isBoss;
     }
 
     public Date getBirth() {
@@ -56,12 +54,12 @@ public class Person {
         this.birth = birth;
     }
 
-    public Map<String, Object> getMaps() {
+    public Map<String, Object> getMap() {
         return map;
     }
 
-    public void setMaps(Map<String, Object> maps) {
-        this.map = maps;
+    public void setMap(Map<String, Object> map) {
+        this.map = map;
     }
 
     public List<Object> getList() {
