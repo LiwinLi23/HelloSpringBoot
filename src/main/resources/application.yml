@@ -1,9 +1,31 @@
+#Readme
+#采用key: value的形式, value可以是字面量， 字符串不用带""或则''，但是"\n"会转义， '\n'会按照字面量输出
+
 server:
   port: 2311
 
 spring:
   profiles:
 #    active: test
+
+person:   #这是一个对象
+#  lastName: Liwin Lee
+#  age: 18
+#  isBoss: false
+#  birth: 1981/09/13
+mySelf: {lastName: Liwin Lee, age: 18}    #对象单行写法， 跟Map一样
+#  map: {k1: v1, k2: v2}
+#  list:
+#    - lisi
+#    - wangwu
+pets:          # 这是list
+  - cat
+  - dog
+  - pig
+pets2: [cat, dog, pig]      #list的行内写法
+#  dog:
+#    lastName: Beibei Lee
+#    age: 2
 ---
 server:
   port: 2312
@@ -17,15 +39,4 @@ server:
 
 spring:
   profiles: prod
-#person:
-#  lastName: Liwin Lee
-#  age: 18
-#  isBoss: false
-#  birth: 1981/09/13
-#  map: {k1: v1, k2: v2}
-#  list:
-#    - lisi
-#    - wangwu
-#  dog:
-#    lastName: Beibei Lee
-#    age: 2
+
