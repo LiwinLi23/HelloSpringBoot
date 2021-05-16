@@ -10,7 +10,7 @@ spring:
 
 person:   #这是一个对象
   lastName: Liwin Lee
-  age: 28
+  age: 18
   isBoss: true
   birth: 1981/09/13
   map: {k1: v1, k2: 12}
